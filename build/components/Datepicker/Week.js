@@ -50,13 +50,17 @@ var DayBackdrop = _styledComponents.default.div(_templateObject4, function (_ref
   var selected = _ref2.selected;
   return selected ? '1' : '0';
 });
+
 var Day = _styledComponents.default.div(_templateObject5, function (_ref2) {
+  // console.log(_ref2,'/_ref3')
   var selected = _ref2.selected;
   return selected ? '#3da692' : 'none';
 },function (_ref3) {
+  // console.log(_ref3,'/_ref3')
   var selected = _ref3.selected;
   return selected ? '#fff' : 'rgba(0, 0, 0, 0.87)';
 }, function (_ref4) {
+  // console.log(_ref4,'/_ref3')
   var today = _ref4.today;
   return today ? 'bold' : '400';
 }, function (_ref5) {
@@ -64,6 +68,7 @@ var Day = _styledComponents.default.div(_templateObject5, function (_ref2) {
   var today = _ref5.today;
   return today ? '1.1rem' : 'auto';
 }, function (_ref6) {
+  // console.log(_ref6,'/_ref3')
   var disabled = _ref6.disabled;
   return disabled ? 'lightgrey' : 'auto';
 });

@@ -48,6 +48,7 @@ function (_Component) {
   _inherits(DatePicker, _Component);
 
   function DatePicker(props) {
+    console.log(props,'////')
     var _this;
 
     _classCallCheck(this, DatePicker);
@@ -81,11 +82,19 @@ function (_Component) {
     };
 
 
-    var def = props.selected || new Date();
+    // var def = props.selected || new Date();
+    // console.log(_utils.default.clone(def))
+    let arrDef=[]
+    if(Array.isArray(props.selected)&&props.selected&&props.selected.length){
+      props.selected.map(el=>{
+        arrDef.push(_utils.default.clone(new Date(el)))
+      })
+    }
+    console.log(arrDef,'///')
     _this.state = {
-      view: _utils.default.clone(def),
-      selected: _utils.default.clone(def),
-      selectedDates: props.selected ? [_utils.default.clone(def)] : [],
+      view:arrDef,
+      selected: arrDef,
+      selectedDates: props.selected ? arrDef : [],
       minDate: null,
       maxDate: null,
       open: false
