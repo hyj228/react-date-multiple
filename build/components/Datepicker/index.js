@@ -90,7 +90,6 @@ function (_Component) {
         arrDef.push(_utils.default.clone(new Date(el)))
       })
     }
-    console.log(arrDef,'///')
     _this.state = {
       view:arrDef,
       selected: arrDef,

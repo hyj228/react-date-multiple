@@ -2,6 +2,12 @@
 	import  MultipleDatePicker  from  'react-date-multiple'
 # 实例
 ![enter image description here](http://chuantu.xyz/t6/702/1562922451x2073530529.png)
+# 参数
+
+	onCancel 取消的回调
+	onSubmit 确定的回调
+	selected 默认选中的
+
 # 使用方法 
 	安装antd 使用antd的popover 和input输入框
 		<Popover visible={popoverShow} onVisibleChange={this.handleVisibleChange} 
